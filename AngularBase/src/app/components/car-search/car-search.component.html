@@ -1,0 +1,79 @@
+<div class="container">
+    <h1>Required Features</h1>
+    <form (ngSubmit)="onSubmit()" #carSearchForm="ngForm">
+	
+        <div class="form-group">
+            <label for="power">Color: </label>
+            <select class="form-control" id="color"
+                [(ngModel)]="carSearch.color" name="color"
+                #color="ngModel">
+                <option *ngFor="let color of colors" [value]="color">{{color}}</option>
+            </select>
+        </div>
+		
+		<div class="form-group">
+            <label for="power">Automatic Transmission: </label>
+            <select class="form-control" id="color"
+                [(ngModel)]="carSearch.automaticTransmission" name="automaticTransmission"
+                #automaticTransmission="ngModel">
+                <option *ngFor="let selection of selector" [value]="selection">{{selection}}</option>
+            </select>
+        </div>
+		
+		<div class="form-group">
+            <label for="power">Sun Roof: </label>
+            <select class="form-control" id="sunRoof"
+                [(ngModel)]="carSearch.sunRoof" name="sunRoof"
+                #sunRoof="ngModel">
+                <option *ngFor="let selection of selector" [value]="selection">{{selection}}</option>
+            </select>
+        </div>
+		
+		<div class="form-group">
+            <label for="power">Four Wheel Drive: </label>
+            <select class="form-control" id="fourWheelDrive"
+                [(ngModel)]="carSearch.fourWheelDrive" name="fourWheelDrive"
+                #fourWheelDrive="ngModel">
+                <option *ngFor="let selection of selector" [value]="selection">{{selection}}</option>
+            </select>
+        </div>
+		
+		<div class="form-group">
+            <label for="power">Low Miles: </label>
+            <select class="form-control" id="lowMiles"
+                [(ngModel)]="carSearch.lowMiles" name="lowMiles"
+                #lowMiles="ngModel">
+                <option *ngFor="let selection of selector" [value]="selection">{{selection}}</option>
+            </select>
+        </div>
+		
+		<div class="form-group">
+            <label for="power">Power Windows: </label>
+            <select class="form-control" id="powerWindows"
+                [(ngModel)]="carSearch.powerWindows" name="powerWindows"
+                #powerWindows="ngModel">
+                <option *ngFor="let selection of selector" [value]="selection">{{selection}}</option>
+            </select>
+        </div>
+		
+		<div class="form-group">
+            <label for="power">Navigation: </label>
+            <select class="form-control" id="navigation"
+                [(ngModel)]="carSearch.navigation" name="navigation"
+                #navigation="ngModel">
+                <option *ngFor="let selection of selector" [value]="selection">{{selection}}</option>
+            </select>
+        </div>
+		
+		<div class="form-group">
+            <label for="power">Heated Seats: </label>
+            <select class="form-control" id="heatedSeats"
+                [(ngModel)]="carSearch.heatedSeats" name="heatedSeats"
+                #heatedSeats="ngModel">
+                <option *ngFor="let selection of selector" [value]="selection">{{selection}}</option>
+            </select>
+        </div>
+		
+		<button type="submit" class="btn btn-success">Search</button>
+    </form>
+</div>
