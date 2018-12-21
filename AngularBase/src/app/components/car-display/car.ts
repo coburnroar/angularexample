@@ -5,9 +5,9 @@ export class Car {
 	constructor(
 		public id?: string,
 		public make?: string,
-		public year?: int,
+		public year?: number,
 		public color?: string,
-		public price?: int,
+		public price?: number,
 		public hasAutomatic?: boolean,
 		public hasSunroof?: boolean,
 		public isFourWheelDrive?: boolean,
@@ -17,7 +17,7 @@ export class Car {
 		public hasHeatedSeats?: boolean
 	) {  }
 	
-	importFromJson( json: Object ) {
+	importFromJson( json: any ) {
 		try {
 			if( json._id === undefined || 
 			json.make === undefined  || 
