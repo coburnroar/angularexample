@@ -1,3 +1,13 @@
-<p>
-  car-display works!
-</p>
+<div>
+  <p>ID: {{car.id}}</p>
+  <p>Make: {{car.make}}</p>
+  <p>Year: {{car.year}}</p>
+  <p>Color: {{car.color}}</p>
+  <p>Price: &#36;{{car.price}}</p>
+  <p *ngIf='car.hasSunroof'>Sun Roof</p>
+  <p *ngIf='car.isFourWheelDrive'>Four Wheel Drive</p>
+  <p *ngIf='car.hasLowMiles'>Low Miles</p>
+  <p *ngIf='car.hasPowerWindows'>Power Windows</p>
+  <p *ngIf='car.hasNavigation'>Navigation</p>
+  <p *ngIf='car.hasHeatedSeats'>Heated Seats</p>
+</div>

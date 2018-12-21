@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'car-display',
   templateUrl: './car-display.component.html',
   styleUrls: ['./car-display.component.css']
 })
-export class CarDisplayComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class CarDisplayComponent {
+@Input() car: Car;
 
 }

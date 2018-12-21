@@ -1,4 +1,4 @@
-export class  CarSearch {
+export class CarSearch {
 	
 	constructor(
 		public color?: string,
@@ -7,6 +7,6 @@ export class  CarSearch {
 		public fourWheelDrive?: string,
 		public lowMiles?: string,
 		public navigation?: string,
-		public heatedSeats?: string,
+		public heatedSeats?: string
 	) {  }
 }
